@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="stylesheet.css"> <!-- external stylesheet link -->
+        <!-- External source for mobile navbar icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="topanchor">
+            <p class="bannerspace"> <img src="Ganaraska-Region-Conservation-Authority-Logo.png" alt="banner" class= "banner"  ></p>
+            <div class="navbar" id="menu">
+                <a href="index.html">Project Overview</a>
+                <a href="editing.html">Editing our Map</a>
+                <a href="display.html">Displaying our Map</a>
+                <a href="javascript:void(0);" class="icon" onclick="mobilemenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        
+        <h1> Dashboard 
+        </h1>
+        <h1> Step 1: Outlining the Goals and Individual Development   
+        </h1>
+            <p class="text">
+                Most of our team had familiarity with Dashboards through previous coursework but were keen to dive in and explore further functionality. After discussing our broad goals for what we wanted it to show, we each configured our own dashboard in parallel. This allowed each group member to work creatively and come up with their own solutions.   
+            </p>
+        
+                <h2>Edyn  
+                </h2>
+                    <p class="text">
+                        Through exploring the widgets that dashboard offers I found that the most useful tool was the “Actions” ability found in the settings of the widgets. This allows users to make filters more observable on the map and allows communication between widgets. This was especially useful for showing individual trails and how many trails were open within specific categories through connecting the indicator widgets with pie chart or list widgets. These actions make information much clearer and simpler for users to interpret and were very easy to implement, however some added functionality such as changing the size of the flash would be a good improvement to the software. The customization of color also allowed for very precise design, as every element of the dashboard including the scroll bars was customizable. Having the ability to use HEX code for the colors allowed for a very wide array of hues to be used and lead to a much more coordinated design.   
+                    </p>
+        
+                <h2>Lianne  
+                </h2>
+                    <p class="text">
+                        The two things I did to customize my dashboard were: 
+                        <br>
+                        1. Current weather widget – I tried to add a widget that drew data from an open source website in order to see the current weather in Ganaraska 
+                        <br>
+                        2. Create a trail obstacles layer – This layer would be able to be edited by anyone from the public who downloads field maps 
+                        <br>
+                        As a group we learned that combining old technology, like file geodatabases, with new technologies, like feature classes hosted entirely in the cloud, is not easy. It’s very difficult to have something from the cloud automatically download into a file geodatabase or an enterprise geodatabase.  
+                        <br>
+                            Current Weather Widget 
+                        <br>        
+                        
+                        Working on this widget, which failed completely, reinforced what I learned about configuration, customization and development. The platforms we chose (ESRI) involved a lot of configuration, but wherever I wanted to do some development, like adding a geoJSON link where the daily weather would automatically pop up on the Dashboard, I ran into big issues with ESRI products simply being a commercial off the shelf product. They’re not very compatible with adding and removing little bits of code for some sort of custom widget. All in all, for a simple app I think configuration is the way to go. But wherever the data gets a bit more complicated, or you are sourcing data from several different open-source websites, like with my weather or where there are more sophisticated integrations, it’s better not to use ESRI products and to instead use an open-source software that allows for development.  
+                        <br>
+                            Trail Obstacles Layer
+                        <br>    
+                        
+                        This layer was a huge success. Field maps is easy to use, quick to configure, and so simple that anyone can set it up and then use it without knowing any programming. This reinforced another main thing I learned throughout this project - ESRI products are extremely simple and intuitive in terms of adding widgets, adding fields, and creating layers. A lot of the logic of where to find different fields follows the layout and options that existing in ArcMap and ArcPro so translating your ArcMap skills into ArcGIS online is easy.   
+                        </p>
+                    <h2>Lucy  
+                    </h2>
+                        <p class="text">
+                                    text   
+                        </p>
+                    <h2>Mark  
+                    </h2>
+                        <p class="text">
+                        Included a Rich Text Box as a notification board for staff to describe hazards or closures present. This written forum gives more flexibility to present information not explicitly symbolized in the map data 
+
+                        Having 2 maps stacked on top of each other with tabs to toggle between them was a good use of space, but looked unprofessional if the maps were not at the exact same position. The easiest fix for this was to create one map, then resymbolizing it by the other attribute and saving that as a second map. The key is to not touch either map’s position after this is done, otherwise they would not match up 
+
+                        Found that using pie charts to symbolize attributes for each map coloured to match the map symbology both functions as a legend (so don’t need to include a second one) and can allow easy filtering to highlight trails of a given activity or status
+                        </p>
+        <h1> Step 2: Comparison of Highlights and Creation of Final Dashboard    
+        </h1>
+            <p class="text">
+                After our individual development the team came together to determine which aspects we most liked out of each member’s product. Our top features were: 
+
+                Rich text box for notices 
+
+                List of trails by name and status, linked to the map to show 
+
+                Attractive notification panels showing number of open trails by activity 
+
+                Adding in an additional point layer of user-reported trail hazards, symbolized by type and filtered by a list 
+            </p>
+        
+    </body>
+</html>
