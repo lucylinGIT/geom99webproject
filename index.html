@@ -1,61 +1,101 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-        <link rel="stylesheet" href="stylesheet.css"> <!-- external stylesheet link -->
-        <!-- External source for mobile navbar icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
 
-    <body>
-        <div class="topanchor">
-            <p class="bannerspace"> <img src="Ganaraska-Region-Conservation-Authority-Logo.png" alt="banner" class= "banner"  ></p>
-            <div class="navbar" id="menu">
-                <a href="index.html">Project Overview</a>
-                <a href="editing.html">Editing our Map</a>
-                <a href="display.html">Displaying our Map</a>
-                <a href="javascript:void(0);" class="icon" onclick="mobilemenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="stylesheet.css"> <!-- external stylesheet link -->
+    <!-- External source for mobile navbar icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Project Overview</title>
+</head>
+
+<body>
+    <div class="topanchor">
+        <div class="bannerrow">
+            <div class="bannercol">
+                <img src="Ganaraska-Region-Conservation-Authority-Logo.png" alt="banner" class="banner">
+            </div>
+            <div class="bannercol2">
+                <img src="FlemingSENRS_noBackground.png" alt="banner" class="banner">
             </div>
         </div>
-        
-        <h1>The Problem 
+        <div class="navbar" id="menu">
+            <a href="index.html">PROJECT OVERVIEW</a>
+            <a href="editing.html">EDITING OUR MAP</a>
+            <a href="display.html">DISPLAYING OUR MAP</a>
+            <a href="javascript:void(0);" class="icon" onclick="mobilemenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div class="pssummary">
+        <h1>The Problem
         </h1>
-            <p class="text">
-                Ganaraska Region Conservation Authority plans to release web maps to their users for offline navigation of their Ganaraska Forest Trail network. Currently users rely on paper maps which are costly to produce, and the maps soon become out of date. The trails are commonly closed due to timber harvesting or other hazards that occur, so having easy ways to update the public of these hazards is critical. Furthermore, the GIS staff at GRCA have limited time to spend on these routine updates, so having a simple application for non-GIS savvy staff to update trail attribution and closure notifications is essential. 
-            </p>
-        
-        <h1>The Solultion 
+        <p>
+            Ganaraska Region Conservation Authority plans to release web maps to their users for offline navigation of
+            their Ganaraska Forest Trail network. Currently users rely on paper maps which are costly to produce, and
+            the maps soon become out of date. The trails are commonly closed due to timber harvesting or other hazards
+            that occur, so having easy ways to update the public of these hazards is critical. Furthermore, the GIS
+            staff at GRCA have limited time to spend on these routine updates, so having a simple application for
+            non-GIS savvy staff to update trail attribution and closure notifications is essential.
+        </p>
+
+        <h1>The Solution
         </h1>
-            <p class="text">
-                Our team aimed to create an easy-to-use application for GRCA staff to select and change trail attribution to reflect current status and activity. Second, a Dashboard connected to the web map would be used to highlight any closures and hazards to users before they head out on the trail, combining written notifications currently on the GRCA website with map visualization of those hazards and other trail information.  
+        <p>
+            Our team aimed to create an easy-to-use application for GRCA staff to select and change trail attribution to
+            reflect current status and activity. Second, a Dashboard connected to the web map would be used to highlight
+            any closures and hazards to users before they head out on the trail, combining written notifications
+            currently on the GRCA website with map visualization of those hazards and other trail information.
+        </p>
+    </div>
+    <h1 class="psheader">
+        Final Problem Statement
+    </h1>
+    <div class="psrow">
+        <div class="pscol">
+            <h2 class="tablefields">Ideal
+            </h2>
+            <p class="pspar">
+                A non GIS-saavy staff member at GRCA will be able to use an application to edit the status attributes of
+                trails on a feature layer, and those attribute changes will reflect to symbology changes on a web map.
+                Second, a dashboard highlighting areas of the forest that are closed, any reported hazards, and trails
+                by activity.
             </p>
-        
-        <h1>Ideal 
-        </h1>
-            <p class="text">
-                A non GIS-saavy staff member at GRCA will be able to use an application to edit the status attributes of trails on a feature layer, and those attribute changes will reflect to symbology changes on a web map. Second, a dashboard highlighting areas of the forest that are closed, any reported hazards, and trails by activity.  
+        </div>
+        <div class="pscol">
+            <h2 class="tablefields">Reality
+            </h2>
+            <p class="pspar">
+                There is currently a web map that is static, and the only way to change attributes on the web map would
+                be to publish a new feature server from ArcMap or ArcGIS Pro and update the old feature server that way.
+                Updates for trail closures and forest conditions are currently presented to the public as notices on the
+                GRCA website, without any visual component.
             </p>
-        
-        <h1>Reality 
-        </h1>
-            <p class="text">
-                There is currently a web map that is static, and the only way to change attributes on the web map would be to publish a new feature server from ArcMap or ArcGIS Pro and update the old feature server that way. Updates for trail closures and forest conditions are currently presented to the public as notices on the GRCA website, without any visual component.   
+        </div>
+        <div class="pscol">
+            <h2  class="tablefields">Consequences
+            </h2>
+            <p class="pspar">
+                A GIS saavy staff member is required to make any change to the web map, a longer process and taking up
+                their valuable time. Also, they stick with the same less intuitive notification system about forest
+                conditions, without any visual tie to where those closures are located on the property.
             </p>
-        
-        <h1>Consequences 
-        </h1>
-            <p class="text">
-                A GIS saavy staff member is required to make any change to the web map, a longer process and taking up their valuable time. Also, they stick with the same less intuitive notification system about forest conditions, without any visual tie to where those closures are located on the property.   
+        </div>
+        <div class="pscol">
+            <h2 class="tablefields">Proposal
+            </h2>
+            <p class="pspar">
+                Two applications will be configured to create edits to the trail layer attributes, a Web AppBuilder
+                application for desktop in-office edits, and an ArcGIS Field Maps application for in the field updates.
+                A dashboard will be created to highlight trail status along with other useful widgets (list of all
+                trails, list of closed trails etc.)
             </p>
-        
-        <h1>Proposal 
-        </h1>
-            <p class="text">
-                Two applications will be configured to create edits to the trail layer attributes, a Web AppBuilder application for desktop in-office edits, and an ArcGIS Field Maps application for in the field updates. A dashboard will be created to highlight trail status along with other useful widgets (list of all trails, list of closed trails etc.)    
-            </p>
-        
-    </body>
+        </div>
+    </div>
+    <p class="footer"> Copyright 2020 Fleming College GEOM99 Group Foxtrot </p>
+</body>
+
 </html>

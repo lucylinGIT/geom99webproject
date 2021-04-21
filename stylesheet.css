@@ -1,6 +1,42 @@
 body {
     font-family: Helvetica, Verdana, Arial, sans-serif;
 }
+img {
+	width: 100%;
+}
+p {
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+	text-align: left;
+}
+.footer {
+	width: 97%;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	padding: 1.5%;
+	background-color: #006dc6;
+	margin-bottom: 0;
+	margin-top: 3%;
+}
+h1 {
+	font-size: x-large;
+	text-align: left;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+}
+h2 {
+	text-align: left;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: large;
+}
+
 /* navbar */
 /* Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 .navbar{
@@ -18,10 +54,12 @@ body {
 .navbar a{
 	float: left;
 	color: white;
-	padding: 15px 17px;
+	padding: 17px 19px;
 	text-align: center;
+	font-weight: bold;
 	text-decoration: none;
-	font-size: 18px;
+	letter-spacing: 1px;
+	font-size: 13px;
 	display: block;
 }
 .navbar .icon {
@@ -54,4 +92,124 @@ body {
 		display: block;
 		text-align: left;
 	}
+}
+/* END Navbar */
+
+
+/* Top banner */
+.banner {
+	width: 100%;
+}
+.bannercol {
+	float: left;
+	width: 25%;
+}
+.bannercol2 {
+	float: right;
+	width: 50%;
+}
+.bannerrow::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/* END Top Banner */
+
+
+/* Problem statement summary */
+.pssummary {
+	text-align: left;
+	font-size: medium;
+}
+
+/* END problem statement summary */
+
+
+
+
+
+/* Problem statement table */
+.psrow {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border: #006dc6;
+	border-style: solid;
+}
+.pscol {
+	float: left;
+	width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.psrow::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.pspar {
+	text-align: center;
+	width: 100%;
+}
+.psheader {
+	margin-top: 4%;
+	font-size: x-large;
+	text-align: center;
+}
+.tablefields {
+	text-align: center;
+	word-break: break-all;
+}
+/* END Problem statment table */
+
+
+/* Editing page*/
+.webappimages {
+	width: 93%;
+	margin: auto;
+}
+.webappimages::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.liannewebapp_column {
+	width: 50%;
+	float: left;
+}
+.markwebapp_column {
+	width: 50%;
+	float: left;
+}
+.caption {
+	font-size: small;
+	margin-top: 0;
+	text-align: center;
+	color: grey;
+}
+.fieldimages {
+	width: 93%;
+	margin: auto;
+	text-align: center;
+}
+.fieldimages::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.fieldmap_column {
+	width: 25%;
+	float: left;
+}
+.points {
+	font-weight: bold;
+}
+/* END Editing page */
+
+
+/* Displaying page */
+.dashboard {
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
