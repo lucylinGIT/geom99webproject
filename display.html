@@ -35,9 +35,11 @@
     </h1>
     <p>
         Most of our team had familiarity with Dashboards through previous coursework, but were keen to dive in and
-        explore further functionality applied to this problem. After discussing our broad goals for what we needed it to show, we each
+        explore further functionality applied to this problem. After discussing our broad goals for what we needed it to
+        show, we each
         configured our own dashboards in parallel. This allowed each group member to work creatively and come up with
-        their own solutions. After this individual exploration we came together as a team to compare and discuss what we'd discovered,
+        their own solutions. After this individual exploration we came together as a team to compare and discuss what
+        we'd discovered,
         and apply the best traits on a final product.
     </p>
 
@@ -55,26 +57,16 @@
         wide array of hues to be used and lead to a much more coordinated design.
     </p>
     <div class="dashboard">
-        <img src="images/Dashboards/EdynsDashboard.JPG" alt="Edyn's Dashboard" >
+        <img src="images/Dashboards/EdynsDashboard.JPG" alt="Edyn's Dashboard">
     </div>
     <h2>Lianne
     </h2>
     <p>
         The two things I did to customize my dashboard were:
-        <br>
-        1. Current weather widget – I tried to add a widget that drew data from an open source website in order to see
-        the current weather in Ganaraska
-        <br>
-        2. Create a trail obstacles layer – This layer would be able to be edited by anyone from the public who
-        downloads field maps
-        <br>
-        As a group we learned that combining old technology, like file geodatabases, with new technologies, like feature
-        classes hosted entirely in the cloud, is not easy. It’s very difficult to have something from the cloud
-        automatically download into a file geodatabase or an enterprise geodatabase.
-        <br>
+    </p>
+    <p>
         Current Weather Widget
         <br>
-
         Working on this widget, which failed completely, reinforced what I learned about configuration, customization
         and development. The platforms we chose (ESRI) involved a lot of configuration, but wherever I wanted to do some
         development, like adding a geoJSON link where the daily weather would automatically pop up on the Dashboard, I
@@ -84,10 +76,10 @@
         sourcing data from several different open-source websites, like with my weather or where there are more
         sophisticated integrations, it’s better not to use ESRI products and to instead use an open-source software that
         allows for development.
-        <br>
+    </p>
+    <p>
         Trail Obstacles Layer
         <br>
-
         This layer was a huge success. Field maps is easy to use, quick to configure, and so simple that anyone can set
         it up and then use it without knowing any programming. This reinforced another main thing I learned throughout
         this project - ESRI products are extremely simple and intuitive in terms of adding widgets, adding fields, and
@@ -95,7 +87,7 @@
         existing in ArcMap and ArcPro so translating your ArcMap skills into ArcGIS online is easy.
     </p>
     <div class="dashboard">
-        <img src="images/Dashboards/LiannesDashboard.JPG" alt="Lianne's Dashboard" >
+        <img src="images/Dashboards/LiannesDashboard.JPG" alt="Lianne's Dashboard">
     </div>
     <h2>Lucy
     </h2>
@@ -103,43 +95,51 @@
         Of all the web GIS solutions that we explored, I found Dashboards to be the most well suited in presenting the
         trail information we wanted. My original vision for the dashboard was to provide a list of open trails, as well
         as number of trail type that, when clicked, would highlight the trails on the main map (symbolized by status).
-        since the data we were given was incomplete, a large portion of my time was spent correcting and assigning
+        Since the data we were given was incomplete, a large portion of my time was spent correcting and assigning
         values to the fields, especially the status and trail names. The issue I ran into while creating the dashboard
         was that I was able to configure selection actions with the list but not with the indicators that provided
-        activity trail numbers. This provided lless functionality with the indicators and meant cluttering the dashboard
-        if I wanted to include a way for users to select by trail acivity type. I ultimately decided against adding more
-        widgets to keep true to the problem solution, which was to display trail status and hazards (which was added in
-        our final dashboard)
+        activity trail numbers. This provided less functionality with the indicators and meant cluttering the dashboard
+        if I wanted to include a way for users to select by trail acivity type. My main takeaway from experimenting with
+        Dashboards is that the user interface, while easy and generally customizable, it is not suited for more specific
+        selection functionalities. Something I would like to have been able to do for all widgets are selection actions.
+        I ultimately decided against adding more widgets to keep true to the problem solution, which was to display
+        trail status and hazards (which was added in our final dashboard).
     </p>
     <div class="dashboard">
-        <img src="images/Dashboards/LucysDashboard.JPG" alt="Lucy's Dashboard" >
+        <img src="images/Dashboards/LucysDashboard.JPG" alt="Lucy's Dashboard">
     </div>
 
     <h2>Mark
     </h2>
     <p>
-        I found one simple but effective solution to be incorporate into the dashboard was the rich text box as a notification
+        I found one simple but effective solution to be incorporate into the dashboard was the rich text box as a
+        notification
         board for staff to describe hazards or closures present. This written
-        forum gives more flexibility to present information not explicitly symbolized in the map data, and effectively takes the
+        forum gives more flexibility to present information not explicitly symbolized in the map data, and effectively
+        takes the
         place of the written notification currently on the GRCA website.
     </p>
     <p>
         Second, I found that using pie charts to symbolize attributes for a given map with a matching colour scheme
-        can function as a clear and effective legend. Not only does this negate the need for including a separate legend 
+        can function as a clear and effective legend. Not only does this negate the need for including a separate legend
         with the map, but that chart can be used to filter trails of each type, adding more functionality.
     </p>
-    <p>  
-       Finally, having 2 maps stacked on top of each other with tabs to toggle between them was a good use of space, and a 
-       given pie chart legend can be connected to its related map for filtering. However, such stacked maps looked
-        unprofessional if the maps were not at the exact same position - even a slight shift in position while switching maps 
-        is distracting for the user. The easiest fix for this was to create one map with a given symbology, then resymbolizing
-         it by the other attribute and saving that as a second map without touching the map position at all. As long as neither map's 
-         position is changed after that time, you should be okay.
-    </p>    
+    <p>
+        Finally, having 2 maps stacked on top of each other with tabs to toggle between them was a good use of space,
+        and a
+        given pie chart legend can be connected to its related map for filtering. However, such stacked maps looked
+        unprofessional if the maps were not at the exact same position - even a slight shift in position while switching
+        maps
+        is distracting for the user. The easiest fix for this was to create one map with a given symbology, then
+        resymbolizing
+        it by the other attribute and saving that as a second map without touching the map position at all. As long as
+        neither map's
+        position is changed after that time, you should be okay.
+    </p>
 
     </p>
     <div class="dashboard">
-        <img src="images/Dashboards/MarksDashboard.JPG" alt="Mark's Dashboard" >
+        <img src="images/Dashboards/MarksDashboard.JPG" alt="Mark's Dashboard">
     </div>
 
     <h1> Step 2: Comparison of Highlights and Creation of Final Dashboard
@@ -152,11 +152,12 @@
         <li>Rich text box for notices</li>
         <li>List of trails by name and status, linked to the map to show their location</li>
         <li>Attractive notification panels showing number of open trails by activity</li>
-        <li>Adding in an additional point layer of user-reported trail hazards, symbolized by type and filtered by a list</li>
+        <li>Adding in an additional point layer of user-reported trail hazards, symbolized by type and filtered by a
+            list</li>
     </ul>
 
     <div class="dashboard">
-        <img src="images/Dashboards/FinaldashUpdated.PNG" alt="Final Dashboard" >
+        <img src="images/Dashboards/FinaldashUpdated.PNG" alt="Final Dashboard">
     </div>
     <p class="footer"> Copyright 2020 Fleming College GEOM99 Group Foxtrot </p>
 
