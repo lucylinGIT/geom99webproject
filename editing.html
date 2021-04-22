@@ -47,19 +47,16 @@
             these for our purposes was the Batch Attribute Editor, which allows selection and editing of many
             features from
             multiple layers using various shape-based selectors. The simplicity of the widgets makes it very easy
-            for a
-            staff member to quickly create updates to several trails at once without having to sort through data as
-            using
-            the Web AppBuilder is as simple as connecting the app to a given web map and choosing which feature
-            layers and fields within those layers on which editing is allowed.
-            Unfortunately, this application is based on the older Javascript API and will be discontinued in the
-            future. The
-            new ArcGIS Experience Builder based on the latest version of the Javascript API does not have editing
-            functionality as of yet, so Web AppBuilder is our desktop-friendly option. In addition, with the update
-            to
-            Esri’s web maps they are capable editing directly on the map so the use of a web app will likely be
-            unnecessary
-            for the purposes of editing.
+            to quickly make updates to several trails at once. Configuring the Web AppBuilder is as simple as connecting the
+             app to a given web map and choosing which feature layers (and fields within those layers) to allow the app to edit, 
+             provided those layers were published with editing capabilities already.
+        </p>
+        <p>
+             Unfortunately, this application is based on the older Javascript API and will be discontinued in the future. 
+             The new ArcGIS Experience Builder based on the latest version of the Javascript API does not have
+              editing functionality as of yet, so Web AppBuilder is our desktop-friendly application option. That said, 
+              with the update to Esri’s new web map viewer there is capability to editing directly on the map from within the
+              viewer, so the use of a web app will likely be unnecessary for the purposes of editing.
         </p>
     </div>
     <div class="webappimages">
@@ -86,9 +83,8 @@
         features
         and
         editing their attributes. One downside is that it is geared towards the editing of features one by
-        one
-        like for
-        inspections, so does not have the same batch editing functionality as the web AppBuilder.
+        one as is common for inspections, so does not have the same ease of batch editing functionality as 
+        the Web AppBuilder.
     </p>
 
     <div class="fieldimages">
@@ -129,21 +125,21 @@
         feature
         service.
         There are two ways to publish an editable feature service:
-    <p class="points">
-        1) Setting the Feature capabilities on the layer when publishing it from ArcGIS Pro
-        <br>
-        2) Changing the service capabilities after publishing through the ArcGIS Server Manager
     </p>
+    <ol>
+        <li>Setting the Feature capabilities on the layer when publishing it from ArcGIS Pro</li>
+        <li>Changing the service capabilities after publishing through the ArcGIS Server Manager</li>
+    </ol>
     <p>
         After trying both of these avenues and ensuring that both the ArcGIS Online item and web map linked
-        to
-        that
+        to that
         feature service supported editing, our team was still able to edit our layer with any of our editing
         applications. After some frustration, we learned that a feature service must be stored on an
         Enterprise
         geodatabase to allow editing on the web – services stored in a file geodatabase do not. A critical
         step!
-        <br>
+    </p>
+    <p>
         For the purposes of this course based on the web development side, we decided to instead host our
         feature layer
         on ArcGIS Online which allows the same editing capability as would one stored on ArcGIS Server.
