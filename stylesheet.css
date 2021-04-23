@@ -4,11 +4,28 @@ body {
 img {
 	width: 100%;
 }
+.content {
+	max-width: 1200px;
+	margin: auto;
+}
+.section {
+	margin-top: 6%;
+	margin-bottom: 6%; 
+}
+
 p,ul,ol {
 	width: 93%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 2%;
+	text-align: left;
+}
+.lianneheader {
+	font-weight: bold;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
 	text-align: left;
 }
 .footer {

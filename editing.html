@@ -30,37 +30,37 @@
             </a>
         </div>
     </div>
-
-    <h1> Step 1: Exploring editing applications
-    </h1>
-    <p>
-        As we are designing this project for GRCA who have ESRI licencing, we explored the ESRI options for editing
-        spatial data.
-    </p>
-
-    <h2>Web AppBuilder
-    </h2>
-    <div>
-        <p>
-            A desktop-friendly application, it has a few easily configurable widgets with editing capabilities. The
-            best of
-            these for our purposes was the Batch Attribute Editor, which allows selection and editing of many
-            features from
-            multiple layers using various shape-based selectors. The simplicity of the widgets makes it very easy
-            to quickly make updates to several trails at once. Configuring the Web AppBuilder is as simple as connecting the
-             app to a given web map and choosing which feature layers (and fields within those layers) to allow the app to edit, 
-             provided those layers were published with editing capabilities already.
-        </p>
-        <p>
-             Unfortunately, this application is based on the older Javascript API and will be discontinued in the future. 
-             The new ArcGIS Experience Builder based on the latest version of the Javascript API does not have
-              editing functionality as of yet, so Web AppBuilder is our desktop-friendly application option. Another desktop alternative, 
-              is Esri’s new web Map Viewer, which has capability to edit directly on the map from within the viewer. However,
-               this editing lacks the batch editing of the Web AppBuilder. So if Web AppBuilder is discontinued the map viewer can act 
-               as a desktop substitute. Perhaps in the future batch attribute editing will be added to this or ESRI's Field Maps, as we'll 
-               discuss next.
-        </p>
-    </div>
+    <div class="content">
+        <div class="section">
+            <h1> Step 1: Exploring editing applications
+            </h1>
+            <p>
+                As we are designing this project for GRCA who have ESRI licencing, we explored the ESRI options for editing
+                spatial data.
+            </p>
+        
+            <h2>Web AppBuilder
+            </h2>
+                <p>
+                    A desktop-friendly application, it has a few easily configurable widgets with editing capabilities. The
+                    best of
+                    these for our purposes was the Batch Attribute Editor, which allows selection and editing of many
+                    features from
+                    multiple layers using various shape-based selectors. The simplicity of the widgets makes it very easy
+                    to quickly make updates to several trails at once. Configuring the Web AppBuilder is as simple as connecting the
+                     app to a given web map and choosing which feature layers (and fields within those layers) to allow the app to edit, 
+                     provided those layers were published with editing capabilities already.
+                </p>
+                <p>
+                     Unfortunately, this application is based on the older Javascript API and will be discontinued in the future. 
+                     The new ArcGIS Experience Builder based on the latest version of the Javascript API does not have
+                      editing functionality as of yet, so Web AppBuilder is our desktop-friendly application option. Another desktop alternative, 
+                      is Esri’s new web Map Viewer, which has capability to edit directly on the map from within the viewer. However,
+                       this editing lacks the batch editing of the Web AppBuilder. So if Web AppBuilder is discontinued the map viewer can act 
+                       as a desktop substitute. Perhaps in the future batch attribute editing will be added to this or ESRI's Field Maps, as we'll 
+                       discuss next.
+                </p>
+        </div>
     <div class="webappimages">
         <div class="liannewebapp_column">
             <img src="images/WebAppBuilder/LiannesWebAppBuilder.JPG" alt="Liannes's Web App" class="liannewebapp">
@@ -76,19 +76,20 @@
             </p>
         </div>
     </div>
-    <h2>Field Maps
-    </h2>
-    <p>
-        This mobile app combines a lot of functionality for in-the-field use, including offline map viewing,
-        data
-        collection and editing. The editing is also as simple as loading in a map, selecting individual
-        features
-        and
-        editing their attributes. One downside is that it is geared towards the editing of features one by
-        one as is common for inspections, so does not have the same ease of batch editing functionality as 
-        the Web AppBuilder.
-    </p>
-
+    <div class="section">
+        <h2>Field Maps
+        </h2>
+        <p>
+            This mobile app combines a lot of functionality for in-the-field use, including offline map viewing,
+            data
+            collection and editing. The editing is also as simple as loading in a map, selecting individual
+            features
+            and
+            editing their attributes. One downside is that it is geared towards the editing of features one by
+            one as is common for inspections, so does not have the same ease of batch editing functionality as 
+            the Web AppBuilder.
+        </p>
+    </div>
     <div class="fieldimages">
         <div class="fieldmap_column">
             <img src="images/FieldMaps/174121445_485794069442998_3214646457310123637_n.jpg" alt="Field Map View"
@@ -119,39 +120,37 @@
             </p>
         </div>
     </div>
-
-    <h1>Step 2: Making an editable layer
-    </h1>
-    <p>
-        The initial goal for this application is to update a trail layer stored on ArcGIS Server as a
-        feature
-        service.
-        There are two ways to publish an editable feature service:
-    </p>
-    <ol>
-        <li>Setting the Feature capabilities on the layer when publishing it from ArcGIS Pro</li>
-        <li>Changing the service capabilities after publishing through the ArcGIS Server Manager</li>
-    </ol>
-    <p>
-        After trying both of these avenues and ensuring that both the ArcGIS Online item and web map linked
-        to that
-        feature service supported editing, our team was still able to edit our layer with any of our editing
-        applications. After some frustration, we learned that a feature service must be stored on an
-        Enterprise
-        geodatabase to allow editing on the web – services stored in a file geodatabase do not. A critical
-        step!
-    </p>
-    <p>
-        For the purposes of this course based on the web development side, we decided to instead host our
-        feature layer
-        on ArcGIS Online which allows the same editing capability as would one stored on ArcGIS Server.
-        After
-        this
-        change, our editing applications worked fine, and our simple configurations allowed attribute
-        changes to
-        the
-        trails.
-    </p>
+    <div class="section">
+        <h1>Step 2: Making an Editable Layer
+        </h1>
+        <p>
+            The initial goal for this application is to update a trail layer stored on ArcGIS Server as a
+            feature
+            service.
+            There are two ways to publish an editable feature service:
+        </p>
+        <ol>
+            <li>Setting the Feature capabilities on the layer when publishing it from ArcGIS Pro</li>
+            <li>Changing the service capabilities after publishing through the ArcGIS Server Manager</li>
+        </ol>
+        <p>
+            After trying both of these avenues and ensuring that both the ArcGIS Online item and web map linked
+            to that
+            feature service supported editing, our team was still unable to edit our layer with any of our editing
+            applications. We tried uploading the data as a Hosted Feature Service on ArcGIS Online and our apps worked fine, 
+            so we determined it was some connection issue with our feature service. After much googling, experimening and 
+            frustration, a question to Shawn reveiled our stumbling 
+            block: a feature service must be based on data stored on an Enterprise geodatabase to allow editing on the web services! 
+            One referencing data stored on a file geodatabase does not. A critical oversight!
+        </p>
+        <p>
+            For the purposes of this course focused the web development side (and not necessarily working with enterprise 
+            geodatabases), we decided continue to explore editing with these apps on our Hosted Feature Service. The behaviour of
+            a hosted layer is the same as one on server with the proper permissions set, and after adopting this workflow our
+             editing applications worked fine, and our simple configurations allowed attribute changes to the trails.
+        </p>
+    </div>
+    </div>
     <p class="footer"> Copyright 2020 Fleming College GEOM99 Group Foxtrot </p>
 </body>
 
