@@ -230,3 +230,17 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 }
+.experienceimages {
+	width: 93%;
+	margin: auto;
+	text-align: center;
+}
+.experienceimages::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.exp_column {
+	width: 25%;
+	float: left;
+}
